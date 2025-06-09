@@ -28,7 +28,7 @@ const Menu = () => {
       <div className="d-flex flex-wrap justify-content-center pt-5 mt-2 gap-2 w-100">
         {menus.map((menu, index) => (
           <Link to={menu.link} className="p-2 card-menu w-25 btn btn-outline-light text-dark text-start" key={index}>
-            <img className="w-100" src={menu.image} alt="image-menu" />
+            <img className="w-100" src={`${import.meta.env.BASE_URL}${menu.image}`} alt="image-menu" />
             <h5>{menu.title}</h5>
             <p className="text-break text-wrap text-truncated">{menu.description}</p>
           </Link>

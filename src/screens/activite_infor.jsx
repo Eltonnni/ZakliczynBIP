@@ -2,16 +2,17 @@ import React from "react"
 import { useParams } from "react-router-dom"
 
 const ActiviteInfo = () => {
-
   const params = useParams()
+
+  const basePath = import.meta.env.BASE_URL
 
   let imageUrl
   if (params.title?.includes('Bike')) {
-    imageUrl = '/biike.jpg'
+    imageUrl = `${basePath}biike.jpg`
   } else if (params.title?.includes('River')) {
-    imageUrl = '/canoa.jpg'
+    imageUrl = `${basePath}canoa.jpg`
   } else {
-    imageUrl = '/liive.jpg'
+    imageUrl = `${basePath}liive.jpg`
   }
 
   const dish = {
@@ -25,7 +26,11 @@ const ActiviteInfo = () => {
       <div className="d-flex gap-2">
         <div className="w-75">
           <h1 className="fs-1">{dish.title}</h1>
-          <img  src={dish.image}  alt={dish.title || "Imagem do prato"} className="img-fluid w-100 image-market-1"/>
+          <img
+            src={dish.image}
+            alt={dish.title || "Imagem da atividade"}
+            className="img-fluid w-100 image-market-1"
+          />
         </div>
         <div className="w-50 text-center">
           <p className="fs-5 pt-5 p-2">{dish.description}</p>

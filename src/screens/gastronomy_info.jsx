@@ -14,7 +14,7 @@ const GastronomyInfo = () => {
       <div className="row g-3 align-items-start">
         <div className="col-md-6">
           <img
-            src={`/${dish.image}`}
+            src={`${import.meta.env.BASE_URL}${dish.image}`}
             alt={dish.title}
             className="img-fluid image-info"
           />
