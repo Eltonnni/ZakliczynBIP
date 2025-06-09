@@ -1,0 +1,105 @@
+.cabecalho {
+    background-color: #A3D1C6;
+    height: 50px;
+}
+
+.language-select {
+    background-color: #A3D1C6;
+    border-color: #A3D1C6;
+}
+
+.btn-index {
+    background-color: #A3D1C6;
+    border-color: #A3D1C6;
+}
+
+.country-select {
+    width: 30px;
+    height: 20px;
+}
+
+.country-select-w {
+    width: 40px;
+    background-color: #A3D1C6;
+}
+
+.image {
+    height: calc(100vh - 130px);
+}
+
+.image-footer {
+    height: 54px;
+}
+
+.image-main-session {
+    height: 300px;
+}
+
+.image-season {
+    height: 200px;
+}
+
+.image-market {
+    height: 300px !important;
+    width: 300px;
+}
+
+.image-market-1 {
+    height: 570px !important;
+}
+
+.icon{
+ background-color: #A3D1C6;
+ width: 200px;
+ height: 200px;
+}
+
+.image-map{
+ height: 500px;
+}
+
+.card-menu {
+    width: 300px;
+}
+
+.image-main-ativities {
+    height: 370px;
+}
+
+.image-market {
+    height: calc(100vh - 150px);
+}
+
+.image-info {
+    height: calc(100vh - 150px);
+}
+
+.image-gastronomy {
+    height: 200px;
+    width: 350px;
+}
+
+.mainlayout {
+    min-height: calc(100vh - 100px);
+}
+
+.info {
+    background-color: #A3D1C6;
+}
+
+.description {
+    background-color: #F0EBEB;
+}
+
+.text-truncated {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .d-grelha-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1px);
+  }
